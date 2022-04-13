@@ -20,7 +20,7 @@ namespace Allsop.Api.Controllers
 
 
         [HttpGet("ShoppingCart")]
-        public async Task<ActionResult> ShoppingCart([FromQuery] Guid userId)
+        public async Task<ActionResult> ShoppingCarts([FromQuery] Guid userId)
         {
             var result = await _scopedMediator.Send(new GetShoppingCartByUserIdQuery(userId));
 

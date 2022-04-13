@@ -10,7 +10,7 @@ namespace Allsop.DataAccess.Repository.Mapper
         private readonly IMapper<Product, ProductDb> _productMapper;
         public ShoppingCartItemMapper(IMapperFactory mapperFactory)
         {
-            _productMapper = mapperFactory.GetMapper<Product,ProductDb>();
+            _productMapper = mapperFactory.GetMapper<Product, ProductDb>();
         }
 
         protected override void Map(ShoppingCartItem model, ShoppingCartItemDb entity)
@@ -20,6 +20,8 @@ namespace Allsop.DataAccess.Repository.Mapper
             entity.Quantity = model.Quantity;
             entity.ProductId = model.ProductId;
             entity.ShoppingCartId = model.ShoppingCartId;
+            entity.CategoryId = model.CategoryId;
+            entity.Price = model.Price;
         }
 
         protected override void Map(ShoppingCartItemDb entity, ShoppingCartItem model)
@@ -29,6 +31,8 @@ namespace Allsop.DataAccess.Repository.Mapper
             model.Quantity = entity.Quantity;
             model.ProductId = entity.ProductId;
             model.ShoppingCartId = entity.ShoppingCartId;
+            model.CategoryId = entity.CategoryId;
+            model.Price = entity.Price;
         }
     }
 }

@@ -272,8 +272,10 @@ namespace Allsop.DataAccess
                 {
                     Id = new Guid("3F7F3C46-A659-4359-A6B1-51281B0B0AEE"),
                     ProductId = new Guid("9A8EDC2B-8362-44AC-8081-C74D2A977F8F"),//Product with Baking/Cooking Ingredients category
+                    CategoryId = new Guid("322886CA-D633-4C89-A975-6626C6F32E8A"),
                     ShoppingCartId = new Guid("4F465B3D-8F26-4519-BE5D-FC4E3C2694E0"),
-                    Quantity = 1
+                    Quantity = 1,
+                    Price = 42.82m
                 },
                 new ShoppingCartItemDb()
                 {
@@ -303,9 +305,11 @@ namespace Allsop.DataAccess
                         new ShoppingCartItemDb()
                         {
                             Id = new Guid("9B6ADB4F-985E-4D4A-A5E5-9AEDBFCC2261"),
-                            ProductId = new Guid("A5546E3D-7ACE-422E-886B-99F2A91090C7"), //Product with Category Drinks category
                             ShoppingCartId = new Guid("1148A5AF-F59B-4539-8291-452F542A6E0D"),
-                            Quantity = 9
+                            ProductId = new Guid("A5546E3D-7ACE-422E-886B-99F2A91090C7"), //Product with Category Drinks category
+                            CategoryId = new Guid("28458754-096F-4238-B4BC-98C31D7FCD5A"),
+                            Quantity = 9,
+                            Price = 4.5m
                         }
                     }
                 },
@@ -323,9 +327,11 @@ namespace Allsop.DataAccess
                         new ShoppingCartItemDb()
                         {
                             Id = new Guid("3F7F3C46-A659-4359-A6B1-51281B0B0AEE"),
-                            ProductId = new Guid("9A8EDC2B-8362-44AC-8081-C74D2A977F8F"),//Product with Baking/Cooking Ingredients category
                             ShoppingCartId = new Guid("4F465B3D-8F26-4519-BE5D-FC4E3C2694E0"),
-                            Quantity = 1
+                            ProductId = new Guid("9A8EDC2B-8362-44AC-8081-C74D2A977F8F"),//Product with Baking/Cooking Ingredients category
+                            CategoryId = new Guid("322886CA-D633-4C89-A975-6626C6F32E8A"),
+                            Quantity = 1,
+                            Price = 42.82m,
                         }
                     }
                 },
@@ -343,8 +349,10 @@ namespace Allsop.DataAccess
                         new ShoppingCartItemDb()
                         {
                             Id = new Guid("5EC1A0D3-B5FC-430D-B7F3-9AFA13DA2725"),
-                            ProductId = new Guid("C75CB909-35AA-40EF-BD6F-D60A2205F33A"),
                             ShoppingCartId = new Guid("1D724CEA-ECC2-4242-973C-8E8BF656E40B"),
+                            ProductId = new Guid("C75CB909-35AA-40EF-BD6F-D60A2205F33A"),
+                            CategoryId = new Guid("8FD884CD-E251-4195-AF3B-342D86CDE8E4"),
+                            Price = 100,
                             Quantity = 100
                         }
                     }
