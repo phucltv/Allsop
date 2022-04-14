@@ -342,7 +342,7 @@ namespace Allsop.DataAccess
                 new ShoppingCartDb()
                 {
                     Id = new Guid("1D724CEA-ECC2-4242-973C-8E8BF656E40B"),
-                    DiscountAmount = 0,
+                    DiscountAmount = 10m,
                     UserId = new Guid("DFE72135-05EB-41A3-8C96-26728B0DA83B"), //user3
                     ShoppingCartItems = new List<ShoppingCartItemDb>()
                     {
